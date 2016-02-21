@@ -1,0 +1,5 @@
+.metadata/*
+.project
+.classpath
+springioc/.gradle/2.10/taskArtifacts/*.*
+springioc/.settings/*.*

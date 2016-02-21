@@ -1,0 +1,7 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+task leetcode << {
+    sourceSets*.java.srcDirs*.each{it.mkdirs()}
+    sourceSets*.resource.srcDirs*.each{it.mkdirs()}
+}
