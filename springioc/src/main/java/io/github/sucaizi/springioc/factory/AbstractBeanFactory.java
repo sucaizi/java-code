@@ -19,11 +19,11 @@ public abstract class AbstractBeanFactory implements BeanFactory {
 
 	@Override
 	public void registerBeanDefinition(String name,
-			BeanDefinition beanDefinition) {
+			BeanDefinition beanDefinition) throws Exception{
 		Object bean = doCreateBean(beanDefinition);
 		beanDefinition.setBean(bean);
 		beanDefinitionMap.put(name, beanDefinition);
 	}
-	// 创建bean的规则下方到子具体的子类
-	protected abstract Object doCreateBean(BeanDefinition beanDefinition);
+	// 创建bean的规则下放到子类具体实现
+	protected abstract Object doCreateBean(BeanDefinition beanDefinition) throws Exception;
 }
