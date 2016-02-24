@@ -11,7 +11,6 @@ public abstract class AbstractBeanDefinitionReader implements BeanDefinitionRead
 	private ResourceLoader resourceLoader;
 	
 	public AbstractBeanDefinitionReader(ResourceLoader resourceLoader) {
-		// TODO Auto-generated constructor stub
 		this.registry = new HashMap<String, BeanDefinition>();
 		this.resourceLoader = resourceLoader;
 	}

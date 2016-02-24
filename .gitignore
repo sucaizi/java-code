@@ -2,4 +2,5 @@
 .project
 .classpath
 springioc/.gradle/2.10/taskArtifacts/*.*
+springioc/.gradle/1.11/taskArtifacts/*.*
 springioc/.settings/*.*
