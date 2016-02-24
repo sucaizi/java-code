@@ -12,6 +12,7 @@ import org.w3c.dom.Node;
 
 import io.github.sucaizi.springioc.AbstractBeanDefinitionReader;
 import io.github.sucaizi.springioc.BeanDefinition;
+import io.github.sucaizi.springioc.BeanReference;
 import io.github.sucaizi.springioc.PropertyValue;
 import io.github.sucaizi.springioc.io.ResourceLoader;
 
@@ -73,7 +74,19 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 				Element propertyElement = (Element)node;
 				String name = propertyElement.getAttribute("name");
 				String value = propertyElement.getAttribute("value");
-				beanDefinition.getPropertyValues().addPropertyValue(new PropertyValue(name, value));
+				
+				if (value != null && value.length() > 0) {
+				    beanDefinition.getPropertyValues().addPropertyValue(new PropertyValue(name, value));
+				} else {
+					String ref = propertyElement.getAttribute("ref");
+					
+					if (ref == null && ref.length() == 0) {
+						throw new IllegalArgumentException("Configuration problem: <property> element for property '"
+								+ name + "' must specify a ref or value");
+					}
+					BeanReference beanReference = new BeanReference(ref);
+					beanDefinition.getPropertyValues().addPropertyValue(new PropertyValue(name, beanReference));
+				}
 			}
 		}
 	}
