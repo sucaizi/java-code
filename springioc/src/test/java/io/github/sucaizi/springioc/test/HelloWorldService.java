@@ -2,14 +2,20 @@ package io.github.sucaizi.springioc.test;
 
 public class HelloWorldService {
 	
-	private String text;
+    private String text;
 
-	public void helloWorld() {
-		System.out.println(text);
-	}
-	
-	public void setText(String text) {
-		this.text = text;
-	}
+    private OutputService outputService;
+
+    public void helloWorld(){
+        outputService.output(text);
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public void setOutputService(OutputService outputService) {
+        this.outputService = outputService;
+    }
 
 }

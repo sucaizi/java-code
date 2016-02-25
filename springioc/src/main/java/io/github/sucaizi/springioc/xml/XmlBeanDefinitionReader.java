@@ -74,7 +74,6 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 				Element propertyElement = (Element)node;
 				String name = propertyElement.getAttribute("name");
 				String value = propertyElement.getAttribute("value");
-				
 				if (value != null && value.length() > 0) {
 				    beanDefinition.getPropertyValues().addPropertyValue(new PropertyValue(name, value));
 				} else {

@@ -3,6 +3,7 @@ package io.github.sucaizi.springioc.factory;
 import java.lang.reflect.Field;
 
 import io.github.sucaizi.springioc.BeanDefinition;
+import io.github.sucaizi.springioc.BeanReference;
 import io.github.sucaizi.springioc.PropertyValue;
 
 public class AutowireCapableBeanFactory extends AbstractBeanFactory {
@@ -26,7 +27,13 @@ public class AutowireCapableBeanFactory extends AbstractBeanFactory {
 		for(PropertyValue propertyValue: mbd.getPropertyValues().getPropertyValueList()) {
 			Field declareField = bean.getClass().getDeclaredField(propertyValue.getName());
 			declareField.setAccessible(true);
-			declareField.set(bean, propertyValue.getValue());
+			
+			Object value = propertyValue.getValue();
+			if (value instanceof BeanReference) {
+				BeanReference beanReference = (BeanReference)value;
+				value = getBean(beanReference.getName());
+			}
+			declareField.set(bean, value);
 		}
 	}
 }
