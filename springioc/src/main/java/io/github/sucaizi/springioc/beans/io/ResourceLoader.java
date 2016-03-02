@@ -1,4 +1,4 @@
-package io.github.sucaizi.springioc.io;
+package io.github.sucaizi.springioc.beans.io;
 
 import java.net.URL;
 

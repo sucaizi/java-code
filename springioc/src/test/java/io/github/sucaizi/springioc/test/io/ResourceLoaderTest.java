@@ -2,8 +2,8 @@ package io.github.sucaizi.springioc.test.io;
 
 import java.io.InputStream;
 
-import io.github.sucaizi.springioc.io.Resource;
-import io.github.sucaizi.springioc.io.ResourceLoader;
+import io.github.sucaizi.springioc.beans.io.Resource;
+import io.github.sucaizi.springioc.beans.io.ResourceLoader;
 
 import org.junit.Assert;
 import org.junit.Before;

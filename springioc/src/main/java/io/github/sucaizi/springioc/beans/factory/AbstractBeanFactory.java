@@ -1,4 +1,4 @@
-package io.github.sucaizi.springioc.factory;
+package io.github.sucaizi.springioc.beans.factory;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -6,15 +6,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import io.github.sucaizi.springioc.BeanDefinition;
+import io.github.sucaizi.springioc.beans.BeanDefinition;
 
 public abstract class AbstractBeanFactory implements BeanFactory {
 	
 	private Map<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<String, BeanDefinition>();
 	private final List<String> beanDefinitionNames = new ArrayList<String>();
-	
-	public AbstractBeanFactory() {
-	}
 
 	@Override
 	public Object getBean(String name) throws Exception {
@@ -36,7 +33,6 @@ public abstract class AbstractBeanFactory implements BeanFactory {
 		
 		beanDefinitionMap.put(name, beanDefinition);
 		beanDefinitionNames.add(name);
-		
 	}
 	
 	public void preInstantiateSingletons() throws Exception {

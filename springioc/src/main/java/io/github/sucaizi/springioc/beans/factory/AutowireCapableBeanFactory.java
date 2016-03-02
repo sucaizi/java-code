@@ -1,10 +1,10 @@
-package io.github.sucaizi.springioc.factory;
+package io.github.sucaizi.springioc.beans.factory;
 
 import java.lang.reflect.Field;
 
-import io.github.sucaizi.springioc.BeanDefinition;
+import io.github.sucaizi.springioc.beans.BeanDefinition;
 import io.github.sucaizi.springioc.BeanReference;
-import io.github.sucaizi.springioc.PropertyValue;
+import io.github.sucaizi.springioc.beans.PropertyValue;
 
 public class AutowireCapableBeanFactory extends AbstractBeanFactory {
 

@@ -1,6 +1,6 @@
-package io.github.sucaizi.springioc.factory;
+package io.github.sucaizi.springioc.beans.factory;
 
-import io.github.sucaizi.springioc.BeanDefinition;
+import io.github.sucaizi.springioc.beans.BeanDefinition;
 
 public interface BeanFactory {
 

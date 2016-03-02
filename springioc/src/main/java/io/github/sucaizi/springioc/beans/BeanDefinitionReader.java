@@ -1,4 +1,4 @@
-package io.github.sucaizi.springioc;
+package io.github.sucaizi.springioc.beans;
 
 public interface BeanDefinitionReader {
 	

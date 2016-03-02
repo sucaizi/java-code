@@ -1,7 +1,7 @@
 /**
  * 
  */
-package io.github.sucaizi.springioc;
+package io.github.sucaizi.springioc.beans;
 
 /**
  * @author suda

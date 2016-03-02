@@ -4,9 +4,9 @@ import static org.junit.Assert.*;
 
 import java.util.Map;
 
-import io.github.sucaizi.springioc.BeanDefinition;
-import io.github.sucaizi.springioc.io.ResourceLoader;
-import io.github.sucaizi.springioc.xml.XmlBeanDefinitionReader;
+import io.github.sucaizi.springioc.beans.BeanDefinition;
+import io.github.sucaizi.springioc.beans.io.ResourceLoader;
+import io.github.sucaizi.springioc.beans.xml.XmlBeanDefinitionReader;
 
 import org.junit.Assert;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-package io.github.sucaizi.springioc.xml;
+package io.github.sucaizi.springioc.beans.xml;
 
 import java.io.InputStream;
 
@@ -10,11 +10,11 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 
-import io.github.sucaizi.springioc.AbstractBeanDefinitionReader;
-import io.github.sucaizi.springioc.BeanDefinition;
+import io.github.sucaizi.springioc.beans.AbstractBeanDefinitionReader;
+import io.github.sucaizi.springioc.beans.BeanDefinition;
 import io.github.sucaizi.springioc.BeanReference;
-import io.github.sucaizi.springioc.PropertyValue;
-import io.github.sucaizi.springioc.io.ResourceLoader;
+import io.github.sucaizi.springioc.beans.PropertyValue;
+import io.github.sucaizi.springioc.beans.io.ResourceLoader;
 
 public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
 

@@ -1,6 +1,6 @@
-package io.github.sucaizi.springioc;
+package io.github.sucaizi.springioc.beans;
 
-import io.github.sucaizi.springioc.io.ResourceLoader;
+import io.github.sucaizi.springioc.beans.io.ResourceLoader;
 
 import java.util.HashMap;
 import java.util.Map;
