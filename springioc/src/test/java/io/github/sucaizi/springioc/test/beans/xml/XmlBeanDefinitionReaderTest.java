@@ -1,4 +1,4 @@
-package io.github.sucaizi.springioc.test.xml;
+package io.github.sucaizi.springioc.test.beans.xml;
 
 import static org.junit.Assert.*;
 

@@ -1,4 +1,4 @@
-package io.github.sucaizi.springioc.test.io;
+package io.github.sucaizi.springioc.test.beans.io;
 
 import java.io.InputStream;
 
