@@ -7,8 +7,11 @@ public class HelloWorldService {
     private OutputService outputService;
 
     public void helloWorld(){
-        outputService.output(text);
+        //outputService.output(text);
+    	System.out.println(this.text);
     }
+    
+    
 
     public void setText(String text) {
         this.text = text;

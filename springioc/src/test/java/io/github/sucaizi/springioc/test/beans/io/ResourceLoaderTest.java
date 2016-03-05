@@ -10,16 +10,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class ResourceLoaderTest {
-	
-	private ResourceLoader resourceLoader; 
-
-	@Before
-	public void setUp() throws Exception {
-		resourceLoader = new ResourceLoader();
-	}
 
 	@Test
 	public void test() throws Exception {
+		ResourceLoader resourceLoader = new ResourceLoader();
 		Resource resource = resourceLoader.getResource("springioc.xml");
 		InputStream inputStream = resource.getInputStream();
 		Assert.assertNotNull(inputStream);

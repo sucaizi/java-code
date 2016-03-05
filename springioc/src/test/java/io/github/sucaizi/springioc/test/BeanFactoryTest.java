@@ -3,15 +3,11 @@ package io.github.sucaizi.springioc.test;
 import java.util.Map;
 
 import io.github.sucaizi.springioc.beans.BeanDefinition;
-import io.github.sucaizi.springioc.beans.PropertyValue;
-import io.github.sucaizi.springioc.beans.PropertyValues;
 import io.github.sucaizi.springioc.beans.factory.AbstractBeanFactory;
 import io.github.sucaizi.springioc.beans.factory.AutowireCapableBeanFactory;
-import io.github.sucaizi.springioc.beans.factory.BeanFactory;
 import io.github.sucaizi.springioc.beans.io.ResourceLoader;
 import io.github.sucaizi.springioc.beans.xml.XmlBeanDefinitionReader;
 
-import org.junit.Before;
 import org.junit.Test;
 
 

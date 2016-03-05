@@ -6,7 +6,6 @@ public class PropertyValue {
 	private final Object value;
 	
 	public PropertyValue(String name, Object value) {
-		// TODO Auto-generated constructor stub
 		this.name = name;
 		this.value = value;
 	}

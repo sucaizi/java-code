@@ -15,7 +15,7 @@
 
     <bean name="helloWorldService" class="io.github.sucaizi.springioc.test.HelloWorldService">
         <property name="text" value="Hello World!"></property>
-        <property name="outputService" ref="outputService"></property>
+        <!--property name="outputService" ref="outputService" --><!--  /property -->
     </bean>
 
 </beans>

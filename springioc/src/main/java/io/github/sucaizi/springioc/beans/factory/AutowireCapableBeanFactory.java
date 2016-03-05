@@ -8,10 +8,6 @@ import io.github.sucaizi.springioc.beans.PropertyValue;
 
 public class AutowireCapableBeanFactory extends AbstractBeanFactory {
 
-	public AutowireCapableBeanFactory() {
-		// TODO Auto-generated constructor stub
-	}
-
 	@Override
 	protected Object doCreateBean(BeanDefinition beanDefinition) throws Exception {
 		Object bean = createBeanInstance(beanDefinition);

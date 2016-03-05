@@ -32,11 +32,5 @@ public class ClassPathXmlApplicationContext extends AbstractApplicationContext {
 		}
 	}
 
-	@Override
-	public void registerBeanDefinition(String name,
-			BeanDefinition beanDefinition) throws Exception {
-		// TODO Auto-generated method stub
-		
-	}
 
 }
